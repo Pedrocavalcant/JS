@@ -14,7 +14,7 @@
        var peso = Number(window.prompt('Digite seu peso'))
        var altura = Number(window.prompt('Digite sua altura'))
        var imc = peso/(altura ** 2)
-       window.alert('Seu indice de massa corporal e de: ' + String(imc))
+       window.alert('Seu indice de massa corporal e de: ' + imc.toFixed(2).replace('.',','))
        
     </script>
 </body>
