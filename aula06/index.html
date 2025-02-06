@@ -14,7 +14,7 @@
         var n1 = Number(window.prompt('Digite um numero'))
         var n2 = Number(window.prompt('Digite outro numero'))
         var s = n1 + n2
-        window.alert(`A soma dos valores ${n1} e ${n2} e igual a ${s}`)
+        window.alert(`A soma dos valores ${n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} e ${n2.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} e igual a ${s.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}`)
         // + serve para adicao e para concatenacao
         // number + number = adicao, string + string = concatenacao
 
