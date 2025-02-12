@@ -5,21 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <style>
-      form{
-        
-      }
+
+@charset "UTF-8";
+
+body{
+    background: url('imagens/WhatsApp\ Image\ 2024-08-24\ at\ 10.11.21.jpeg')  no-repeat top center;
+    background-size:cover;
+    font: normal 15pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.2); /* Fundo branco com 20% de opacidade */
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores WebKit */
+    place-items: center;
+}
+
+
+section > #txtn1,#txtn2{
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin:10px 0 10px 0;
+}
+
+#button{
+    margin:10px 0 10px 0;
+    text-align: center;
+    width: 185px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
     </style>
 </head>
 <body>
-  <div id="res"></div>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+  
+ <section>
 
-  <form>
-  <h1>Calculadora de IMC</h1>
   <input type="number" name="txtn1" id="txtn1" placeholder="Digite seu peso"> <br>
   <input type="number" name="txtn2" id="txtn2" placeholder="Digite sua altura"> <br>
   <input type="button" value="Verificar" onclick="calcular()" id="button">
-  </form>
+  <div id="res"></div>
 
+</section>
+
+<footer>
+    <strong>&copy;PedroCavalcante</strong>
+</footer>
     <script>
       function calcular(){
         var peso = Number(document.getElementById('txtn1').value);
