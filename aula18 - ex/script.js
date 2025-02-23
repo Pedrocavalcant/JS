@@ -37,6 +37,8 @@ function contar(){
             res.innerHTML += "<strong>Graça e paz, guerreiro</strong><br><br>"
         } else if(n.toLowerCase() === "ana") {
             res.innerHTML += "<strong>Está melhor, bem?</strong><br><br>"
+        } else if(n.toLowerCase() === "naubert") {
+            res.innerHTML += "<strong>Me faz um pix, mano!!</strong><br><br>"
         } else {
             res.innerHTML += "<strong>TU É, MANO?</strong> <br> <br>"
         }
