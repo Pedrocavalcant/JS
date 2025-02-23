@@ -5,6 +5,10 @@ body{
     font: normal 15pt arial;
 }
 
+h1{
+    color: rgb(86, 86, 225);
+}
+
 div > h2{
     text-align: center;
 }
